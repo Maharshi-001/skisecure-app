@@ -1,0 +1,529 @@
+/* ========================================================================= */
+/* ARCHITECTURE & DEPLOYMENT SECTION STYLES (Scoped to #architecture)        */
+/* Powered by SkieSecure Design Tokens                                       */
+/* ========================================================================= */
+
+#architecture {
+  width: 100%;
+  background-color: var(--skie-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.5rem 1rem;
+  box-sizing: border-box;
+  color: var(--skie-neutral-800);
+  overflow-x: clip;
+  background-image: radial-gradient(rgba(30, 41, 59, 0.12) 1.2px, transparent 1.2px);
+  background-size: 28px 28px;
+}
+
+@media (min-width: 640px) {
+  #architecture {
+    padding: 5rem 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #architecture {
+    padding: 6rem 3rem;
+  }
+}
+
+#architecture .container {
+  width: 100%;
+  max-width: 1720px;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* Top Row: Heading Image + 3-Zone Architecture Diagram */
+#architecture .top-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+@media (min-width: 1536px) {
+  #architecture .top-row {
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+}
+
+#architecture .heading-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1536px) {
+  #architecture .heading-block {
+    width: 280px;
+    flex: 0 0 280px;
+  }
+}
+
+#architecture .heading-img {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+@media (min-width: 640px) {
+  #architecture .heading-img {
+    max-width: 280px;
+  }
+}
+
+/* 3-Zone Panel Card */
+#architecture .diagram-panel {
+  width: 100%;
+  background-color: var(--skie-white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--skie-neutral-200);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.05), 0 2px 6px rgba(0, 0, 0, 0.02);
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+@media (min-width: 640px) {
+  #architecture .diagram-panel {
+    border-radius: var(--radius-xl);
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #architecture .diagram-panel {
+    padding: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  #architecture .diagram-panel {
+    flex: 1 1 0%;
+  }
+}
+
+#architecture .diagram-inner {
+  min-width: 840px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  #architecture .diagram-inner {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #architecture .diagram-inner {
+    gap: 1.25rem;
+  }
+}
+
+/* Zone 1: Sender Zone */
+#architecture .sender-zone {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  #architecture .sender-zone {
+    flex: 0 0 270px;
+  }
+}
+
+#architecture .zone-header {
+  margin-bottom: 1.25rem;
+}
+
+#architecture .zone-badge-gray {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: var(--skie-neutral-500);
+  text-transform: uppercase;
+}
+
+#architecture .zone-badge-red {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: var(--skie-primary);
+  text-transform: uppercase;
+}
+
+#architecture .zone-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--skie-neutral-800);
+  margin-top: 0.25rem;
+  letter-spacing: -0.3px;
+}
+
+#architecture .sender-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#architecture .source-card {
+  background-color: var(--skie-neutral-50);
+  border: 1px solid var(--skie-neutral-200);
+  border-radius: var(--radius-md);
+  padding: 0.875rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+@media (min-width: 640px) {
+  #architecture .source-card {
+    border-radius: var(--radius-lg);
+  }
+}
+
+#architecture .source-card:hover {
+  border-color: var(--skie-neutral-300);
+}
+
+#architecture .source-left {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+#architecture .source-icon-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  background-color: var(--skie-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#architecture .source-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--skie-neutral-800);
+  line-height: 1.2;
+}
+
+#architecture .source-sub {
+  font-size: 0.75rem;
+  color: var(--skie-neutral-500);
+  margin-top: 0.125rem;
+}
+
+#architecture .status-active {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+#architecture .status-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--skie-success);
+}
+
+/* Zone 2: TLS Channel */
+#architecture .tls-channel {
+  flex: 0 0 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.25rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  #architecture .tls-channel {
+    flex: 0 0 100px;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #architecture .tls-channel {
+    flex: 0 0 115px;
+  }
+}
+
+#architecture .tls-badge {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  background-color: var(--skie-primary-light);
+  border: 1.5px solid var(--skie-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(238, 52, 63, 0.15);
+  margin-bottom: 0.625rem;
+}
+
+#architecture .tls-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--skie-primary);
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#architecture .tls-flow-wrapper {
+  width: 100%;
+  max-width: 100px;
+  height: 1.25rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#architecture .tls-sub {
+  font-size: 10px;
+  color: var(--skie-neutral-500);
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Zone 3: Cloud Engine */
+#architecture .engine-zone {
+  flex: 1 1 0%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#architecture .engine-columns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  #architecture .engine-columns {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #architecture .engine-columns {
+    gap: 1.25rem;
+  }
+}
+
+/* Pipeline 3 Stages */
+#architecture .pipeline-col {
+  flex: 1.1 1 0%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+#architecture .stage-card {
+  background-color: var(--skie-neutral-100);
+  border-radius: var(--radius-lg);
+  padding: 0.875rem 1rem;
+  box-sizing: border-box;
+}
+
+#architecture .stage-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+#architecture .stage-badge {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: var(--skie-primary);
+  text-transform: uppercase;
+}
+
+#architecture .stage-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--skie-neutral-800);
+  margin-bottom: 0.375rem;
+  letter-spacing: -0.2px;
+}
+
+#architecture .stage-desc {
+  font-size: 0.75rem;
+  color: var(--skie-neutral-500);
+  line-height: 1.5;
+  margin: 0;
+}
+
+#architecture .arrow-between {
+  display: flex;
+  justify-content: center;
+  padding: 0.25rem 0;
+}
+
+/* Supporting Modules Column */
+#architecture .modules-col {
+  flex: 0.95 1 0%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#architecture .module-item {
+  background-color: var(--skie-neutral-100);
+  border-radius: var(--radius-md);
+  padding: 0.625rem 0.875rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  box-sizing: border-box;
+  transition: background-color 0.2s;
+}
+
+#architecture .module-item:hover {
+  background-color: var(--skie-neutral-200);
+}
+
+#architecture .module-icon-box {
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+}
+
+#architecture .module-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--skie-neutral-800);
+  line-height: 1.2;
+}
+
+#architecture .module-sub {
+  font-size: 0.75rem;
+  color: var(--skie-neutral-500);
+  margin-top: 0.125rem;
+}
+
+/* Bottom 3 Deployment Cards */
+#architecture .deployment-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+@media (min-width: 1024px) {
+  #architecture .deployment-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+#architecture .deploy-card {
+  width: 100%;
+  border-radius: var(--radius-xl);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+@media (min-width: 640px) {
+  #architecture .deploy-card {
+    padding: 2.25rem;
+  }
+}
+
+#architecture .deploy-card:hover {
+  transform: translateY(-4px);
+}
+
+#architecture .card-agent {
+  background-color: #eff8ff;
+  box-shadow: 0 8px 24px rgba(238, 52, 63, 0.04);
+}
+#architecture .card-agent:hover {
+  box-shadow: 0 16px 36px rgba(238, 52, 63, 0.08);
+}
+
+#architecture .card-connectors {
+  background-color: #fff4e2;
+  box-shadow: 0 8px 24px rgba(245, 158, 11, 0.04);
+}
+#architecture .card-connectors:hover {
+  box-shadow: 0 16px 36px rgba(245, 158, 11, 0.08);
+}
+
+#architecture .card-fusion {
+  background-color: #f7efff;
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.04);
+}
+#architecture .card-fusion:hover {
+  box-shadow: 0 16px 36px rgba(168, 85, 247, 0.08);
+}
+
+#architecture .deploy-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--skie-neutral-800);
+  margin-bottom: 0.875rem;
+  letter-spacing: -0.3px;
+}
+
+#architecture .deploy-card-desc {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+  color: var(--skie-neutral-600);
+  margin: 0;
+  letter-spacing: -0.15px;
+}
+
+#architecture .deploy-card-img-box {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+#architecture .deploy-card-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}

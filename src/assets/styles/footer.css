@@ -1,0 +1,291 @@
+/* ========================================================================= */
+/* FOOTER STYLES (Scoped to #footer / #contact)                              */
+/* Powered by SkieSecure Design Tokens                                       */
+/* ========================================================================= */
+
+#footer, #contact {
+  width: 100%;
+  background-color: var(--skie-neutral-800);
+  color: var(--skie-white);
+  font-family: inherit;
+  overflow-x: clip;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#footer .container, #contact .container {
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* --- CTA "Be First in Line" Area --- */
+#footer .cta-area, #contact .cta-area {
+  width: 100%;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  #footer .cta-area, #contact .cta-area {
+    padding: 6rem 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #footer .cta-area, #contact .cta-area {
+    padding: 6rem 3rem;
+  }
+}
+
+#footer .cta-heading, #contact .cta-heading {
+  font-size: 1.875rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--skie-white);
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  #footer .cta-heading, #contact .cta-heading {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #footer .cta-heading, #contact .cta-heading {
+    font-size: 44px;
+  }
+}
+
+#footer .cta-subtitle, #contact .cta-subtitle {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--skie-neutral-400);
+  margin-bottom: 2rem;
+  max-width: 680px;
+  letter-spacing: -0.015em;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 640px) {
+  #footer .cta-subtitle, #contact .cta-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2.25rem;
+  }
+}
+
+#footer .subscribe-form, #contact .subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  #footer .subscribe-form, #contact .subscribe-form {
+    flex-direction: row;
+  }
+}
+
+#footer .email-input, #contact .email-input {
+  width: 100%;
+  height: 3rem;
+  border-radius: var(--radius-full);
+  padding: 0 1.25rem;
+  font-size: 0.875rem;
+  color: var(--skie-white);
+  background-color: rgba(30, 41, 59, 0.8);
+  border: 1px solid rgba(51, 65, 85, 0.8);
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  #footer .email-input, #contact .email-input {
+    width: 320px;
+    font-size: 15px;
+  }
+}
+
+#footer .email-input:focus, #contact .email-input:focus {
+  border-color: var(--skie-primary);
+}
+
+#footer .submit-btn, #contact .submit-btn {
+  width: 100%;
+  height: 3rem;
+  padding: 0 1.75rem;
+  border-radius: var(--radius-full);
+  background-color: var(--skie-primary);
+  color: var(--skie-white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: 640px) {
+  #footer .submit-btn, #contact .submit-btn {
+    width: auto;
+    font-size: 15px;
+  }
+}
+
+#footer .submit-btn:hover, #contact .submit-btn:hover {
+  background-color: var(--skie-primary-hover);
+}
+
+#footer .disclaimer, #contact .disclaimer {
+  font-size: 0.75rem;
+  color: var(--skie-neutral-500);
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  #footer .disclaimer, #contact .disclaimer {
+    font-size: 0.875rem;
+  }
+}
+
+#footer .divider, #contact .divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  max-width: 1720px;
+}
+
+/* --- Footer Bottom Bar --- */
+#footer .footer-bar, #contact .footer-bar {
+  width: 100%;
+  max-width: 1440px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  #footer .footer-bar, #contact .footer-bar {
+    padding: 2.5rem 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  #footer .footer-bar, #contact .footer-bar {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+#footer .logo-group, #contact .logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+#footer .logo-icon, #contact .logo-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--skie-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(238, 52, 63, 0.35);
+}
+
+#footer .logo-text, #contact .logo-text {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+#footer .logo-skie, #contact .logo-skie {
+  color: var(--skie-white);
+}
+
+#footer .logo-secure, #contact .logo-secure {
+  color: var(--skie-primary);
+}
+
+#footer .footer-nav, #contact .footer-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: var(--skie-neutral-400);
+  font-weight: 500;
+}
+
+#footer .nav-link, #contact .nav-link {
+  color: var(--skie-neutral-400);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#footer .nav-link:hover, #contact .nav-link:hover {
+  color: var(--skie-white);
+}
+
+#footer .contact-btn, #contact .contact-btn {
+  color: var(--skie-neutral-400);
+  transition: color 0.2s;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+#footer .contact-btn:hover, #contact .contact-btn:hover {
+  color: var(--skie-white);
+}
+
+#footer .copyright, #contact .copyright {
+  font-size: 0.75rem;
+  color: var(--skie-neutral-500);
+  letter-spacing: -0.015em;
+}
+
+@media (min-width: 640px) {
+  #footer .copyright, #contact .copyright {
+    font-size: 0.875rem;
+  }
+}

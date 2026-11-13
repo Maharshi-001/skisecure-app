@@ -1,0 +1,16 @@
+/* ========================================================================= */
+/* HOME PAGE STYLES (Scoped to #main-content)                                */
+/* Powered by SkieSecure Design Tokens                                       */
+/* ========================================================================= */
+
+#main-content {
+  background-color: var(--skie-white);
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: clip;
+}

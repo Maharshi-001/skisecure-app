@@ -1,0 +1,262 @@
+/* ========================================================================= */
+/* CONTACT / EARLY ACCESS MODAL STYLES (Scoped to #contact-modal)            */
+/* ========================================================================= */
+
+#contact-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: inherit;
+}
+
+#contact-modal .backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+#contact-modal .modal-card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 520px;
+  background-color: var(--skie-white);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--skie-neutral-200);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 2rem;
+  box-sizing: border-box;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+#contact-modal .close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--skie-neutral-400);
+  padding: 0.25rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+#contact-modal .close-btn:hover {
+  color: var(--skie-neutral-900);
+  background-color: var(--skie-neutral-100);
+}
+
+#contact-modal .header-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.625rem;
+  background-color: var(--skie-primary-light);
+  border: 1px solid var(--skie-primary-border);
+  border-radius: var(--radius-full);
+  margin-bottom: 0.75rem;
+}
+
+#contact-modal .tag-icon-box {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 9999px;
+  background-color: var(--skie-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact-modal .tag-label {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--skie-primary);
+  text-transform: uppercase;
+}
+
+#contact-modal .modal-title {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--skie-neutral-900);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.375rem 0;
+  line-height: 1.25;
+}
+
+#contact-modal .modal-subtitle {
+  font-size: 0.8125rem;
+  color: var(--skie-neutral-500);
+  line-height: 1.5;
+  margin: 0 0 1.25rem 0;
+}
+
+#contact-modal .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact-modal .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+#contact-modal .label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--skie-neutral-700);
+  letter-spacing: 0.01em;
+}
+
+#contact-modal .required-asterisk {
+  color: var(--skie-primary);
+}
+
+#contact-modal .input-field,
+#contact-modal .select-field {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--skie-neutral-200);
+  background-color: var(--skie-neutral-50);
+  color: var(--skie-neutral-900);
+  font-size: 0.875rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+#contact-modal .input-field:focus,
+#contact-modal .select-field:focus {
+  border-color: var(--skie-primary);
+  box-shadow: 0 0 0 3px rgba(238, 52, 63, 0.15);
+  background-color: var(--skie-white);
+}
+
+#contact-modal .row-two-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 480px) {
+  #contact-modal .row-two-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+#contact-modal .submit-button {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--skie-primary);
+  color: var(--skie-white);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-btn);
+  transition: background-color 0.15s ease, transform 0.1s ease;
+  margin-top: 0.5rem;
+}
+
+#contact-modal .submit-button:hover:not(:disabled) {
+  background-color: var(--skie-primary-hover);
+  transform: translateY(-1px);
+}
+
+#contact-modal .submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+#contact-modal .guarantee-note {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.6875rem;
+  color: var(--skie-neutral-500);
+  letter-spacing: -0.01em;
+}
+
+/* Success Card */
+#contact-modal .success-wrap {
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-modal .success-icon-box {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: var(--radius-full);
+  background-color: var(--skie-primary-light);
+  border: 1px solid var(--skie-primary-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+#contact-modal .success-title {
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--skie-neutral-900);
+  margin: 0 0 0.5rem 0;
+}
+
+#contact-modal .success-desc {
+  font-size: 0.875rem;
+  color: var(--skie-neutral-500);
+  line-height: 1.5;
+  margin: 0 0 1.5rem 0;
+  max-width: 380px;
+}
+
+/* Animations */
+.anim-modal-backdrop {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.anim-modal-card {
+  animation: scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
